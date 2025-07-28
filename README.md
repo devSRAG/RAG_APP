@@ -112,7 +112,7 @@ pip install -r requirements.txt
 
 3. **Ask a Question**  
    Type a question like:  
-   `"What is the conclusion of this document?"`
+   `"What is the no claim discount (NCD) offered in this policy?"`
 
 4. **Get Answer**  
    The app finds relevant document chunks and asks GPT to summarize/answer.

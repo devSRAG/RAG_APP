@@ -36,10 +36,10 @@ This project demonstrates a complete **RAG (Retrieval-Augmented Generation)** pi
 
 | Layer      | Tech Used             |
 |------------|------------------------|
-| Frontend   | Streamlit              |
+| Frontend   | Not Yet            |
 | Backend    | Python, LangChain      |
-| Embeddings | OpenAI `text-embedding-ada-002` |
-| Vector DB  | Pinecone               |
+| Embeddings | HuggingFaceEmbeddings(all-MiniLM-L6-V2) |
+| Vector DB  | ChromaDB            |
 | File Parsing | PyPDF2              |
 | Env Config | python-dotenv          |
 
@@ -94,33 +94,13 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Environment Variables
 
-Create a `.env` file in the root directory with the following variables:
-
-```
-OPENAI_API_KEY=your_openai_api_key
-PINECONE_API_KEY=your_pinecone_api_key
-PINECONE_ENVIRONMENT=your_pinecone_environment
-PINECONE_INDEX_NAME=your_pinecone_index_name
-```
 
 > ❗ *Never share your API keys publicly. Do not commit `.env` to Git.*
 
 ---
 
-## ▶️ Usage
 
-To run the Streamlit app:
-
-```bash
-streamlit run main.py
-```
-
-The app will open in your browser at:  
-📍 `http://localhost:xxxx`
-
----
 
 ## 🧪 Example Workflow
 
@@ -144,9 +124,7 @@ The app will open in your browser at:
 | Issue | Solution |
 |-------|----------|
 | App crashes on PDF upload | Ensure the PDF is not encrypted or image-based only |
-| `KeyError: OPENAI_API_KEY` | Check if `.env` is set up and variables are named correctly |
-| Pinecone error | Ensure the index name exists and your environment is correct |
-| "Streamlit not found" | Run `pip install streamlit` |
+| `KeyError: _API_KEY` | Check if `.env` is set up and variables are named correctly |
 
 ---
 
